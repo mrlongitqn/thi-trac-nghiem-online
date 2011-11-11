@@ -1,0 +1,149 @@
+/* 
+    Document   : style
+    Created on : Nov 6, 2011, 6:34:06 PM
+    Author     : Võ Anh Kiệt
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url('reset.css');
+.clear{
+    clear: both;
+}
+body{
+    background: url('../images/body-bg.png');
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 10px auto;
+}
+
+#top-page{
+    height: 43px;
+    background: url('../images/top-page.png') no-repeat left;
+}
+
+#top-page form{
+    text-align: right;
+    padding-top: 14px;
+    color: #ffffff;
+}
+
+#top-page form label{
+    font-weight: bold;
+}
+
+#txtSearch{
+    border: 1px solid red;
+    width: 200px;
+    height: 18px;
+    background: #5d0505;
+    margin: 0px 10px;
+    color: #ccc;
+    font-style: italic;
+}
+
+#btSearch{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: url('../images/btSearch.png');
+    border: none;
+    height: 20px;
+    width: 46px;
+    cursor: pointer;
+}
+
+#logo{
+    background: #f7f5ef;
+    float: left;
+    height: 95px;
+    width: 301px;
+}
+
+#banner{
+    background: url("../images/banner.png") no-repeat scroll left center transparent;
+    float: right;
+    height: 95px;
+    width: 699px;
+}
+
+#main-nav{
+    height: 46px;
+    background: url('../images/nav-left.png') no-repeat top left #f7f5ef;
+    padding: 0px 15px;
+    background-position: 15px 0px;
+}
+
+#main-nav ul{
+    background: url('../images/nav-mid.png') repeat-x;
+    margin: 0px 10px 0px 20px;
+    height: 46px;
+    padding-top: 14px;
+}
+
+#main-nav div{
+    background: url('../images/nav-right.png') no-repeat top right;
+    height: 46px;
+    margin-top: 0px;
+}
+
+.nav ul li{
+    display: inline;
+    padding: 10px 35px;
+    border-right: 2px dotted #999;
+}
+.nav ul li:last-child{
+    border: none;
+}
+.nav ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+#container{
+    min-height: 100px;
+    background: #f7f5ef;
+    padding: 15px;
+}
+
+#footer{
+    background: url('../images/foot-left.png') no-repeat top left;
+    padding-left:14px;
+}
+#footer>div{   
+    background: url('../images/foot-right.png') no-repeat top right;
+}
+
+#footer>div>div{
+    background: url('../images/foot-mid.png') repeat-x;
+    padding-right:14px;
+    width: 958px;
+    height: 100px;
+}
+
+#sub-nav{
+    padding-top: 20px;
+}
+#sub-nav ul{
+    text-align: right;
+}
+#sub-nav ul li{
+    padding: 0px 5px;
+    border-right: 1px dotted #ccc; 
+}
+
+#sub-nav ul li:last-child{
+    border: none;
+}
+#sub-nav a{
+   color: #ccc;
+   font-weight: normal;
+   font-style: italic;
+   font-size: 12px;
+}
