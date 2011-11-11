@@ -1,0 +1,75 @@
+/* 
+    Document   : form
+    Created on : Nov 6, 2011, 6:34:13 PM
+    Author     : VVKhoa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#form-user{
+    color: #555;
+    padding: 30px;
+    width: 400px;
+    margin: 20px auto;
+    -moz-border-radius: 8px;
+    /*background: #e7e5e6;*/
+    border: 2px solid #e7e5e6;
+}
+
+#form-user form{
+    line-height: 40px;
+}
+
+#form-user form h2{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background:url('../images/form-user-logo.png') no-repeat left center;
+    width: 200px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}
+
+#form-user form label, input, span{
+    display: inline-block;
+}
+#form-user form span{
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+}
+#form-user form label{
+    width: 80px;
+    padding: 0 10px;
+}
+
+#form-user form input.txtInput{
+    width: 220px;
+    height: 23px;
+}
+#formButton{
+    cursor: pointer;
+    border: medium none;
+    height: 30px;
+    text-indent: -9999px;
+    width: 103px;
+    background: url('../images/btnLogin.png') no-repeat;
+    margin: 20px 0 0 230px;
+}
+#form-user .form-error{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #cc0000;
+}
+#form-user .form-error span{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    background: #ff3366;
+    color:black;
+}
+#form-user .form-error b{
+    background: url('../images/error.png') no-repeat left center;
+    padding: 10px 35px;
+}
