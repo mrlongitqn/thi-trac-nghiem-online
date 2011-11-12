@@ -29,17 +29,19 @@ class DataProvider{
         }
     }
     
-    public function __destruct(){
-        if($this->connect){
-            mysql_close($this->connect);
-        }
-    }
-    
     public function ExecuteQuery($query){
         mysql_query("SET NAMES 'utf8'");
         $result = mysql_query($query,$this->connect) or
                     die("Error: ".mysql_error());
         return $result;
+    }
+            
+    public function Close() {
+        $x = mysql_close($this->connect);
+        if(!$x) {
+            die("Error: ".mysql_error($this->connect));
+        }
+        return $x;
     }
 }
 ?>
