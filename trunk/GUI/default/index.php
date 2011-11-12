@@ -1,7 +1,8 @@
 <?php
+$this->addTitle("Trang chủ");
+$this->addStyle(array('/css/style.css','/css/form.css'));
+require_once 'layout/header.inc';
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'layout/footer.inc';
 ?>
+
