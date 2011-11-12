@@ -27,6 +27,7 @@ abstract class Dto {
                 $this->{$fields->name} = "";
             }
         }
+        $mysql->Close();
         $this->init();
     }
     
@@ -49,6 +50,10 @@ abstract class Dto {
             return $this->{$key};
         }
         return null;
+    }
+    
+    public function getTableName(){
+        return $this->_table;
     }
 }
 ?>
