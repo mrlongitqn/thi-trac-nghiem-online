@@ -5,7 +5,7 @@ abstract class Dto {
     
     /**
      * Tên bảng muốn kết nối và khở tạo Dto
-     * @var string     * 
+     * @var string
      */
     protected $_table;
     
