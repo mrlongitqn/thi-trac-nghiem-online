@@ -9,9 +9,14 @@ class Application{
     
     private $title="";
     private $link="";
+    
     public function Application($config=NULL) {
         $this->baseUrl = $this->baseUrl();
         $this->config = $config;
+    }
+    
+    public function __destruct(){
+        
     }
     
     public function baseUrl() {       
@@ -29,12 +34,8 @@ class Application{
         $this->title = "<title>".$title."</title>";
     }
     
-    public function addStyle($listStyle=array()) {
-        $str="";
-        foreach ($listStyle as $value) {
-            $str = $str."<link rel='stylesheet' hrel='{$value}' type='text/css' />";
-        }
-        $this->link = $str;
+    public function getFileConfig() {
+        return $this->config;
     }
 }
 ?>

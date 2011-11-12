@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="author" content="vo anh kiet" />
-        <?php echo $this->link ?>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
         <?php echo $this->title ?>
     </head>
 
